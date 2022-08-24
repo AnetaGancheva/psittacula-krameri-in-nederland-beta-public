@@ -1,0 +1,57 @@
+.card-container{
+    width: 50%;
+    border: black 1px solid;
+    margin: 10vh auto;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+.contact-details{
+    text-align: end;
+}
+
+
+.two-columns{
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover{
+    color: hotpink;
+}
+.menu{
+    border: yellow 1px solid;
+    flex: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.characteristics{
+    list-style-type: none;
+}
+
+.main{
+    border: red 1px solid;
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px){
+
+    div .two-columns{
+        flex-direction: column;
+    }
+    div .main{
+        order: -1;
+    }
+}
